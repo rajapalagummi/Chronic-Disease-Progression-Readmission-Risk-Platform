@@ -1,0 +1,211 @@
+
+<!DOCTYPE html><html><head><title>HealthPath DQ Report</title>
+<style>
+body{font-family:Arial,sans-serif;margin:40px;background:#f5f5f5}
+h1{color:#2c3e50}h2{color:#34495e;margin-top:30px}
+table{border-collapse:collapse;width:100%;background:white;margin-bottom:20px}
+th{background:#2c3e50;color:white;padding:10px;text-align:left}
+td{padding:8px 10px;border-bottom:1px solid #ddd}
+tr:hover{background:#f0f0f0}
+.PASS{color:#27ae60;font-weight:bold}.WARN{color:#f39c12;font-weight:bold}.FAIL{color:#e74c3c;font-weight:bold}
+.summary{background:white;padding:20px;border-radius:5px;margin-bottom:20px}
+.metric{display:inline-block;margin:10px 20px;text-align:center}
+.metric-value{font-size:28px;font-weight:bold;color:#2c3e50}
+.metric-label{font-size:12px;color:#888}
+</style></head><body>
+<h1>HealthPath — Data Quality Report</h1>
+<p>Generated: 2026-09-04 05:19:51</p>
+<div class="summary">
+<div class="metric"><div class="metric-value">45</div><div class="metric-label">Total Checks</div></div>
+<div class="metric"><div class="metric-value" style="color:#27ae60">36</div><div class="metric-label">Passing</div></div>
+<div class="metric"><div class="metric-value" style="color:#f39c12">5</div><div class="metric-label">Warnings</div></div>
+<div class="metric"><div class="metric-value" style="color:#e74c3c">4</div><div class="metric-label">Failing</div></div>
+</div>
+<h2>BRFSS 2022 Data Quality</h2>
+<table><tr><th>Column</th><th>Check</th><th>Total</th><th>Failing</th><th>Pass Rate</th><th>Status</th></tr>
+
+<tr><td>sleep_hours</td><td>Sleep hours 3-12</td><td>48026</td>
+<td>31464</td><td>34.49%</td>
+<td class="FAIL">FAIL</td></tr>
+
+<tr><td>bmi_category</td><td>BMI category 1-4</td><td>48026</td>
+<td>5307</td><td>88.95%</td>
+<td class="WARN">WARN</td></tr>
+
+<tr><td>age_group</td><td>Age group 1-13</td><td>48026</td>
+<td>999</td><td>97.92%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>diabetes_status</td><td>Diabetes binary</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>heart_disease_status</td><td>Heart disease binary</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>copd_status</td><td>COPD binary</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>bmi_category</td><td>BMI not null</td><td>48026</td>
+<td>5307</td><td>88.95%</td>
+<td class="WARN">WARN</td></tr>
+
+<tr><td>physical_activity</td><td>Physical activity 1-2</td><td>48026</td>
+<td>99</td><td>99.79%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>smoking_status</td><td>Smoking binary</td><td>48026</td>
+<td>4120</td><td>91.42%</td>
+<td class="WARN">WARN</td></tr>
+
+<tr><td>diabetes_status</td><td>Null check: diabetes_status</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>heart_disease_status</td><td>Null check: heart_disease_status</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>copd_status</td><td>Null check: copd_status</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>bmi_category</td><td>Null check: bmi_category</td><td>48026</td>
+<td>5307</td><td>88.95%</td>
+<td class="WARN">WARN</td></tr>
+
+<tr><td>physical_activity</td><td>Null check: physical_activity</td><td>48026</td>
+<td>99</td><td>99.79%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>smoking_status</td><td>Null check: smoking_status</td><td>48026</td>
+<td>4120</td><td>91.42%</td>
+<td class="WARN">WARN</td></tr>
+
+<tr><td>alcohol_days</td><td>Null check: alcohol_days</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>sleep_hours</td><td>Null check: sleep_hours</td><td>48026</td>
+<td>30996</td><td>35.46%</td>
+<td class="FAIL">FAIL</td></tr>
+
+<tr><td>income_category</td><td>Null check: income_category</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>education_category</td><td>Null check: education_category</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>age_group</td><td>Null check: age_group</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>sex</td><td>Null check: sex</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>state</td><td>Null check: state</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>last_checkup</td><td>Null check: last_checkup</td><td>48026</td>
+<td>1011</td><td>97.89%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>exercise_any</td><td>Null check: exercise_any</td><td>48026</td>
+<td>99</td><td>99.79%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>health_plan</td><td>Null check: health_plan</td><td>48026</td>
+<td>2004</td><td>95.83%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>general_health</td><td>Null check: general_health</td><td>48026</td>
+<td>124</td><td>99.74%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>physical_health_days</td><td>Null check: physical_health_days</td><td>48026</td>
+<td>31009</td><td>35.43%</td>
+<td class="FAIL">FAIL</td></tr>
+
+<tr><td>mental_health_days</td><td>Null check: mental_health_days</td><td>48026</td>
+<td>29932</td><td>37.68%</td>
+<td class="FAIL">FAIL</td></tr>
+
+<tr><td>heart_attack_history</td><td>Null check: heart_attack_history</td><td>48026</td>
+<td>269</td><td>99.44%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>stroke_history</td><td>Null check: stroke_history</td><td>48026</td>
+<td>130</td><td>99.73%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>kidney_disease</td><td>Null check: kidney_disease</td><td>48026</td>
+<td>143</td><td>99.7%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>depression</td><td>Null check: depression</td><td>48026</td>
+<td>247</td><td>99.49%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>arthritis</td><td>Null check: arthritis</td><td>48026</td>
+<td>206</td><td>99.57%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>survey_year</td><td>Null check: survey_year</td><td>48026</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+</table>
+<h2>CMS Hospital Compare Data Quality</h2>
+<table><tr><th>Column</th><th>Check</th><th>Total</th><th>Failing</th><th>Pass Rate</th><th>Status</th></tr>
+
+<tr><td>readmission_rate_30day</td><td>Readmission rate 5-50%</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>quality_tier</td><td>Quality tier 1-5</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>n_cases</td><td>Case count positive</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>disease</td><td>Valid disease</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>hospital_id</td><td>Null check: hospital_id</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>state</td><td>Null check: state</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>quality_tier</td><td>Null check: quality_tier</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>teaching_hospital</td><td>Null check: teaching_hospital</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>disease</td><td>Null check: disease</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>readmission_rate_30day</td><td>Null check: readmission_rate_30day</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+
+<tr><td>n_cases</td><td>Null check: n_cases</td><td>20000</td>
+<td>0</td><td>100.0%</td>
+<td class="PASS">PASS</td></tr>
+</table>
+
+</body></html>

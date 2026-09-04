@@ -1,0 +1,272 @@
+{
+  "progression": {
+    "cv_results": {
+      "diabetes_status": {
+        "mean_auc": 0.8083,
+        "std_auc": 0.0046,
+        "prevalence": 0.1415,
+        "label": "Diabetes"
+      },
+      "heart_disease_status": {
+        "mean_auc": 0.8797,
+        "std_auc": 0.0034,
+        "prevalence": 0.057,
+        "label": "Heart Disease"
+      },
+      "copd_status": {
+        "mean_auc": 0.825,
+        "std_auc": 0.0047,
+        "prevalence": 0.0762,
+        "label": "COPD"
+      }
+    },
+    "shap_importance": {
+      "diabetes_status": {
+        "age_group": 0.429,
+        "sex": 0.0652,
+        "bmi_category": 0.3351,
+        "physical_activity": 0.0566,
+        "smoking_status": 0.0105,
+        "alcohol_days": 0.2287,
+        "sleep_hours": 0.0508,
+        "income_category": 0.0574,
+        "education_category": 0.0494,
+        "health_plan": 0.0019,
+        "exercise_any": 0.0,
+        "last_checkup": 0.2058,
+        "general_health": 0.5405,
+        "physical_health_days": 0.0162,
+        "mental_health_days": 0.0247,
+        "heart_attack_history": 0.0669,
+        "stroke_history": 0.0305,
+        "kidney_disease": 0.0898,
+        "depression": 0.0068,
+        "arthritis": 0.0151
+      },
+      "heart_disease_status": {
+        "age_group": 0.7619,
+        "sex": 0.254,
+        "bmi_category": 0.092,
+        "physical_activity": 0.0247,
+        "smoking_status": 0.1038,
+        "alcohol_days": 0.0802,
+        "sleep_hours": 0.038,
+        "income_category": 0.0633,
+        "education_category": 0.0474,
+        "health_plan": 0.016,
+        "exercise_any": 0.0,
+        "last_checkup": 0.1019,
+        "general_health": 0.4273,
+        "physical_health_days": 0.0841,
+        "mental_health_days": 0.0442,
+        "heart_attack_history": 0.6857,
+        "stroke_history": 0.0809,
+        "kidney_disease": 0.1046,
+        "depression": 0.0535,
+        "arthritis": 0.1627
+      },
+      "copd_status": {
+        "age_group": 0.399,
+        "sex": 0.0532,
+        "bmi_category": 0.0422,
+        "physical_activity": 0.0615,
+        "smoking_status": 0.5393,
+        "alcohol_days": 0.0734,
+        "sleep_hours": 0.0485,
+        "income_category": 0.0966,
+        "education_category": 0.1257,
+        "health_plan": 0.0074,
+        "exercise_any": 0.0,
+        "last_checkup": 0.0555,
+        "general_health": 0.4243,
+        "physical_health_days": 0.1159,
+        "mental_health_days": 0.0508,
+        "heart_attack_history": 0.0904,
+        "stroke_history": 0.0433,
+        "kidney_disease": 0.0217,
+        "depression": 0.187,
+        "arthritis": 0.3022
+      }
+    },
+    "sensitivity": {
+      "Diabetes": {
+        "baseline": 0.3838,
+        "bmi_category": -0.0913,
+        "physical_activity": -0.0045,
+        "smoking_status": 0.001,
+        "sleep_hours": 0.0303,
+        "exercise_any": 0.0,
+        "last_checkup": 0.0311
+      },
+      "Heart Disease": {
+        "baseline": 0.2743,
+        "bmi_category": -0.0112,
+        "physical_activity": -0.0016,
+        "smoking_status": 0.0179,
+        "sleep_hours": 0.0059,
+        "exercise_any": 0.0,
+        "last_checkup": 0.0112
+      },
+      "COPD": {
+        "baseline": 0.3359,
+        "bmi_category": 0.0021,
+        "physical_activity": -0.0049,
+        "smoking_status": 0.092,
+        "sleep_hours": 0.023,
+        "exercise_any": 0.0,
+        "last_checkup": 0.0078
+      }
+    }
+  },
+  "causal": {
+    "diabetes_status": {
+      "did": {
+        "did_estimate": -0.051701,
+        "se": 0.004339,
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.0602,
+        "ci_upper": -0.0432,
+        "treat_pre": 0.0595,
+        "treat_post": 0.1687,
+        "ctrl_pre": 0.1279,
+        "ctrl_post": 0.2887
+      },
+      "placebo": {
+        "did_estimate": -0.076821,
+        "se": 0.005531,
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.0877,
+        "ci_upper": -0.066,
+        "treat_pre": 0.0348,
+        "treat_post": 0.0917,
+        "ctrl_pre": 0.0582,
+        "ctrl_post": 0.1919,
+        "test_type": "placebo"
+      }
+    },
+    "heart_disease_status": {
+      "did": {
+        "did_estimate": -0.038455,
+        "se": 0.003005,
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.0443,
+        "ci_upper": -0.0326,
+        "treat_pre": 0.0098,
+        "treat_post": 0.0797,
+        "ctrl_pre": 0.0271,
+        "ctrl_post": 0.1354
+      },
+      "placebo": {
+        "did_estimate": -0.022125,
+        "se": 0.002653,
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.0273,
+        "ci_upper": -0.0169,
+        "treat_pre": 0.0046,
+        "treat_post": 0.0167,
+        "ctrl_pre": 0.0093,
+        "ctrl_post": 0.0435,
+        "test_type": "placebo"
+      }
+    },
+    "copd_status": {
+      "did": {
+        "did_estimate": -0.060736,
+        "se": 0.003519,
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.0676,
+        "ci_upper": -0.0538,
+        "treat_pre": 0.0262,
+        "treat_post": 0.0872,
+        "ctrl_pre": 0.0628,
+        "ctrl_post": 0.1846
+      },
+      "placebo": {
+        "did_estimate": -0.042058,
+        "se": 0.003991,
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.0499,
+        "ci_upper": -0.0342,
+        "treat_pre": 0.0187,
+        "treat_post": 0.0359,
+        "ctrl_pre": 0.0319,
+        "ctrl_post": 0.0912,
+        "test_type": "placebo"
+      }
+    }
+  },
+  "survival": {
+    "diabetes_status": {
+      "median_survival": Infinity,
+      "survival_at_12": 0.9105
+    },
+    "heart_disease_status": {
+      "median_survival": Infinity,
+      "survival_at_12": 0.9623
+    },
+    "copd_status": {
+      "median_survival": Infinity,
+      "survival_at_12": 0.951
+    },
+    "cox_diabetes": {
+      "coef": {
+        "bmi_category": 0.5895,
+        "physical_activity": 0.4511,
+        "smoking_status": -0.0671,
+        "age_group": 0.1516
+      },
+      "exp(coef)": {
+        "bmi_category": 1.8031,
+        "physical_activity": 1.57,
+        "smoking_status": 0.9351,
+        "age_group": 1.1637
+      },
+      "p": {
+        "bmi_category": 0.0,
+        "physical_activity": 0.0,
+        "smoking_status": 0.0111,
+        "age_group": 0.0
+      }
+    }
+  },
+  "readmission": {
+    "cv_results": {
+      "diabetes": {
+        "mean_auc": 0.553,
+        "std_auc": 0.0061
+      },
+      "heart_failure": {
+        "mean_auc": 0.553,
+        "std_auc": 0.0061
+      },
+      "copd": {
+        "mean_auc": 0.5626,
+        "std_auc": 0.0036
+      },
+      "heart_attack": {
+        "mean_auc": 0.6029,
+        "std_auc": 0.0085
+      }
+    },
+    "sensitivity": {
+      "diabetes": {
+        "baseline_readmit_prob": 0.3839
+      },
+      "heart_failure": {
+        "baseline_readmit_prob": 0.3839
+      },
+      "copd": {
+        "baseline_readmit_prob": 0.4173
+      },
+      "heart_attack": {
+        "baseline_readmit_prob": 0.3172
+      }
+    }
+  }
+}
