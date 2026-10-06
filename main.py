@@ -43,6 +43,9 @@ print("\n[7/7] Progression and readmission models...")
 progression_results = run_progression_models(brfss_df)
 readmission_results = run_readmission_models(brfss_df, cms_df)
 
+from analysis.statistical import run_statistical_analysis
+run_statistical_analysis(brfss_df, cms_df, progression_results, readmission_results, causal_results)
+
 DISEASE_LABELS = {
     "diabetes_status": "Diabetes",
     "heart_disease_status": "Heart Disease",
