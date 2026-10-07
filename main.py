@@ -49,6 +49,11 @@ run_statistical_analysis(brfss_df, cms_df, progression_results, readmission_resu
 from analysis.factor_decay import run_factor_decay_analysis
 run_factor_decay_analysis(brfss_df, progression_results, readmission_results)
 
+from analysis.advanced_eda import run_advanced_eda
+print(brfss_df.columns.tolist())
+run_advanced_eda(brfss_df)
+
+
 DISEASE_LABELS = {
     "diabetes_status": "Diabetes",
     "heart_disease_status": "Heart Disease",
