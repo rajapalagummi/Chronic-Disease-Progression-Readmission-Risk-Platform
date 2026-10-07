@@ -46,6 +46,9 @@ readmission_results = run_readmission_models(brfss_df, cms_df)
 from analysis.statistical import run_statistical_analysis
 run_statistical_analysis(brfss_df, cms_df, progression_results, readmission_results, causal_results)
 
+from analysis.factor_decay import run_factor_decay_analysis
+run_factor_decay_analysis(brfss_df, progression_results, readmission_results)
+
 DISEASE_LABELS = {
     "diabetes_status": "Diabetes",
     "heart_disease_status": "Heart Disease",
